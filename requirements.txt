@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Core library for Discord bot development
+discord.py>=2.3.2
+
+# For loading environment variables from .env file
+python-dotenv>=1.0.0
+
+# For creating and manipulating Excel files (for the export feature)
+openpyxl>=3.1.2
+
+# Optional: aiosqlite for asynchronous SQLite operations if we decide to optimize database calls further.
+# For now, we'll use the built-in sqlite3 with thread execution for simplicity as discord.py runs in an async loop.
+# aiosqlite>=0.19.0
+
+# pip install -r requirements.txt

@@ -1,0 +1,15 @@
+.env
+venv/
+__pycache__/
+logs/
+automatic_backups/
+guild_data/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+*.xlsx
+*.json
+*.csv
+*.log
+*.err
