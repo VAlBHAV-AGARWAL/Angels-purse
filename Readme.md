@@ -49,26 +49,36 @@ A Discord economy bot with flexible payment tracking, role-based access control,
 - Data management, backups, and exports.
 
 ## Project structure
-
+```
 - `cogs/`
   - `settings.py` — Main `/settings` command and menu logic.
-  - `settings_views/` — Separate UI views for each settings area.
+  - `settings_views/`
     - `assignment_view.py`
     - `data_view.py`
     - `rate_view.py`
     - `restriction_view.py`
     - `task_view.py`
-  - `add.py`, `bal.py`, `less.py`, `lb.py`, etc. — Individual command handlers.
+  - `add.py` — Handles `/add`.
+  - `bal.py` — Handles `/bal`.
+  - `less.py` — Handles `/less`.
+  - `lb.py` — Leaderboard command.
+  - Other user-facing cogs.
 - `db_logic/`
-  - `database.py` — Database operations and query facades.
+  - `database.py` — Facade for database operations.
   - `_core.py` — Database initialization, pooling, and helpers.
-  - `economy_queries.py`, `rate_queries.py`, etc. — SQL query logic.
+  - `economy_queries.py` — Economy and transaction queries.
+  - `rate_queries.py` — Rate management queries.
+  - Other query modules.
 - `utils/`
-  - `checks.py`, `confirmation.py`, `excel_utils.py`, `pagination.py`, `styles.py`
+  - `checks.py`
+  - `confirmation.py`
+  - `excel_utils.py`
+  - `pagination.py`
+  - `styles.py`
 - `main.py` — Bot startup and cog loading.
 - `requirements.txt` — Python dependencies.
 - `Readme.md` — Project documentation.
-
+```
 ## Installation
 
 1. Clone the repository.
